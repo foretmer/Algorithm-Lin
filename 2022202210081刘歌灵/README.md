@@ -30,37 +30,37 @@
 下面是使用[(91,54,45,32), (105,77,72,24), (79,78,48,30)]的货物型号作为示例，使用matplotlib绘制的车厢示意图。
 <br>1.首先初始化车厢。大小是587\*233\*220。<br>
 
-<img src='/figs/图片1.png' height=300px >
+<img src='./figs/图片1.png' height=300px >
 
 <br>2.放入第一个物品。红色圆圈圈出来的地方是物品的放置点。对于第一个物品，它的放置点是(0,0,0)。将它放下之后，这个已经被使用的放置点从列表中删去，然后将新产生的3个放置点加入列表中，用蓝色圆圈圈出。三个放置点分别是来自刚刚放下的物品，以使用的放置点为顶点相连的3条边的端点。<br>
 
-<img src='/figs/图片2.png' height=300px >
-<img src='/figs/图片3.png' height=300px >
+<img src='./figs/图片2.png' height=300px >
+<img src='./figs/图片3.png' height=300px >
 
 <br>3.由于老师给的数据是，同一型号的货物有多个，按照常识，同型号的货物整齐堆叠会减少空间的浪费。所以按照由内向外，由下向上的顺序摆放货物。第二个货物在选择放置点时，将优先使用x,y值更小的放置点(x,y,z)。所以第二个货物会叠在第一个货物上面，如下图所示。此时也会产生新的放置点，同样加入列表。<br>
 
-<img src='/figs/图片4.png' height=300px >
+<img src='./figs/图片4.png' height=300px >
 
 <br>4.当在z这个维度上已经没有空间继续放入物品时，会优先选择保持x，y增加的放置点。而当在y维度上也没有剩余空间时，才考虑x增大的放置点，这样就能确保由内向外，由下向上的摆放顺序。<br>
 
-<img src='/figs/图片5.png' height=300px >
-<img src='/figs/图片6.png' height=300px >
+<img src='./figs/图片5.png' height=300px >
+<img src='./figs/图片6.png' height=300px >
 
 <br>5.按照这种规则一直放入物品<br>
 
-<img src='/figs/图片7.png' height=300px >
+<img src='./figs/图片7.png' height=300px >
 <br>从俯视图可以看到是不会产生类似洞穴一样的空间。<br>
 
-<img src='/figs/图片8.png' height=300px >
+<img src='./figs/图片8.png' height=300px >
 <br>6.当按照同一方向不能再放下物品的时候<br>
 
-<img src='/figs/图片9.png' height=300px >
+<img src='./figs/图片9.png' height=300px >
 <br>将物品的长宽调转，继续进行尝试。如果这样也不行，就跳过这个物品，转而尝试尺寸更小的货物。<br>
 
-<img src='/figs/图片10.png' height=300px >
+<img src='./figs/图片10.png' height=300px >
 
 <br>7.这样就是物品最终摆放的样子<br>
-<img src='/figs/图片11.png' height=300px >
+<img src='./figs/图片11.png' height=300px >
 
 ### 2.2 代码说明
 <ul>
@@ -188,10 +188,10 @@
 和基础部分算法的整体思路是一致的。但是有三点不同。一是在对小数的处理上，直接向上取整作为箱子的尺寸。二是随机生成箱子的尺寸，不进行箱子体积的排序，以满足随机到达，先到达先摆放的要求。三是允许其他的摆放姿势，不要求最大面朝下。
 <br>这样的效果是，箱子会先从底部开始摆放。
 
-<img src='/figs/图片13.png' height=300px >
+<img src='./figs/图片13.png' height=300px >
 <br>最终的车厢摆放效果如下图所示
 
-<img src='/figs/图片14.png' height=300px >
+<img src='./figs/图片14.png' height=300px >
 ### 3.2实验结果
 <br>对于计算时间，绝大多数的箱子位置计算可以在2秒内完成，有极少部分超过2秒的也能在5秒内完成计算。
 <br>对于在这个范围(长40.0～100.0，宽20.0～80.0，高20.0～80.0)内生成的箱子，摆放位置的输出如下。(物品的尺寸是向上取整的结果)	
