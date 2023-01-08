@@ -113,18 +113,5 @@ python evaluation.py -h
 python heuristic.py -h
 ```
 
-## 结果示例
-训练结果：
-![](assets/16731083603253.jpg)
-对应评估结果：
-![](assets/16731084725765.jpg)
-
-实验结果数据：
-![](assets/16731086115887.jpg)
-
-运行时间：
-![](assets/16731086831310.jpg)
-
-
 ## 参考
 paper [Learning Efficient Online 3D Bin Packing on Packing Configuration Trees](https://openreview.net/forum?id=bfuGjlCwAq) 
