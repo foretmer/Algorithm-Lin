@@ -154,3 +154,5 @@ cargo run --release
 ![res](imgs/res.png)
 
 `drawer.py`用于对装箱结果进行可视化，修改自网络，性能占用较高，渲染效果图仅供参考。
+
+![3d](imgs/3d.png)
