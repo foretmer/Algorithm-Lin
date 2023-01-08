@@ -1,5 +1,5 @@
 
-已完成任务中全部基础部分和高级部分的要求。
+已完成任务中全部高级部分要求。
 
 ## Dependencies
 * gym==0.13.0
@@ -22,7 +22,7 @@
     custom = input('Please input the experiment name\n')
     timeStr = custom + '-' + time.strftime('%Y.%m.%d-%H-%M-%S', time.localtime(time.time()))
 ```
-然后进行一些列环境及训练配置的设定（这里不做展示，详见代码），随后开展模型的训练流程：
+然后进行一系列环境及训练配置的设定（这里不做展示，详见代码），随后开展模型的训练流程：
 ```
     # 创建PCT的 actor & critic 网络
     PCT_policy =  DRL_GAT(args)
