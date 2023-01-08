@@ -93,5 +93,5 @@ def draw_packing_result(problem: Problem, ps: PackingState, test_id):
 
         pc = plotCubeAt(positions, sizes, colors=colors, edgecolor="k")
         ax1.add_collection3d(pc)
-    # plt.show()
-    plt.savefig('./results_2/{}.png'.format(test_id), dpi=300)
+    plt.show()
+    # plt.savefig('./results/{}.png'.format(test_id), dpi=300)
