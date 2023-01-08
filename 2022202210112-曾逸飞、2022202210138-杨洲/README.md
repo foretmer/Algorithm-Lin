@@ -18,4 +18,4 @@
 （3）CPU 内存：16GB 
 （4）开发工具：PyCharm Community Edition 2020.2.2 x64 
 （5）编译器：python3.7
-
+（6）依赖库：matplotlib==3.5.3、numpy==1.21.6
