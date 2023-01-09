@@ -4,6 +4,10 @@ from classes import *
 import mplt
 
 
+# 是否即时打印每个box的摆放
+is_instant_printing = False
+
+
 # 变成占比小数list
 def list_occ(input_list: List[int]):
     list_sum = sum(input_list)
@@ -19,6 +23,9 @@ def load_boxes(online_boxes_list: List[Box], container: Container):
     pose_weight_occ = list_occ(list_occ([5, 4, 3, 1, 2, 0]))
     # print(pose_weight_occ)
 
+    # 即时输出当前box的摆放座标和pose
+    if is_instant_printing:
+        print("output((x,y,z)-pose): ", end="")
     while idx_box < len(online_boxes_list):
         idx_pose = 0
         box = online_boxes_list[idx_box]
@@ -43,7 +50,7 @@ def load_boxes(online_boxes_list: List[Box], container: Container):
             is_loaded = container.load(box)
             # 该pose成功装入
             if is_loaded.is_valid:
-                pose_weight_occ[idx_pose] += 0.01
+                # pose_weight_occ[idx_pose] += 0.01
                 break
             # 继续遍历其它pose
             idx_pose += 1
@@ -51,6 +58,9 @@ def load_boxes(online_boxes_list: List[Box], container: Container):
         if is_loaded.is_valid:
             pose_weight_occ[idx_pose] += 0.01
             idx_box += 1
+            # 即时输出当前box的摆放座标和pose
+            if is_instant_printing:
+                print(f"{box.point}-{poses[idx_pose]}".replace("BoxPose.", ""), end=" ")
             # 更新pose权重
         elif is_loaded == Point(-1, -1, 0):
             # 更新参考面位置
@@ -59,6 +69,7 @@ def load_boxes(online_boxes_list: List[Box], container: Container):
             # 装入失败
             idx_box += 1
     # 返回最终的货柜占用率
+    print("\n")
     return sum(list(map(lambda x: x.volume, container._loaded_boxes))) / container.volume
 
 
@@ -72,10 +83,10 @@ if __name__ == "__main__":
         print(dataset)
 
         # 分别输入数据集中的各组数据进行测试
-        for i_types in [1]:
-            for i_E in [0]:
-        # for i_types in range(len(dataset['dataset'])):
-        #     for i_E in range(len(dataset['dataset'][i_types]['data'])):
+        # for i_types in [4]:
+        #     for i_E in [0]:
+        for i_types in range(len(dataset['dataset'])):
+            for i_E in range(len(dataset['dataset'][i_types]['data'])):
                 idx_boxes_types = i_types
                 idx_E = i_E
                 print("boxes-types:", dataset['dataset'][idx_boxes_types]['boxes-types'])
@@ -107,5 +118,5 @@ if __name__ == "__main__":
                 case.save_csv(dataset['dataset'][idx_boxes_types]['data'][idx_E]['name'],
                               str(online_boxes_list).replace(", ", ""), str(occ_rate))
                 # 画图
-                mplt.draw(case)
+                # mplt.draw(case)
                 print()
