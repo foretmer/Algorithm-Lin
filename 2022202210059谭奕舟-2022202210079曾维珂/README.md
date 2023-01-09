@@ -58,5 +58,7 @@ Loop:
 
 ![image](https://user-images.githubusercontent.com/52786717/211156012-fed24d35-cfb0-492e-9a85-0208eee7626c.png)
 
-# 代码执行
-将所有提交的.py文件放在同一文件夹下，运行main.py即可
+# 运行
+```bash
+python main.py
+```
