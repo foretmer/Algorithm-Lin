@@ -1,0 +1,64 @@
+# 基于遗传算法的3D装箱问题
+# 算法思路
+首先为了降低算法的复杂度，本算法采用剩余空间分割的思想，将三维问题转化为一个一维队列的选择问题。我们假定一个立方体为一个三维空间的独立放置单元（container），被放入的箱子默认放置在（0，0，0）的原点。如果箱子长宽高均小于container长宽高时，该箱子被装入该container，同时该container被移除container队列。其剩余空间将会被分为上方空间，左侧空间, 正面空间三个container, 根据从上，左，正顺序依次添加至剩余container队列中，并根据坐标与队列已有container进行合并。当箱子不能装进该container时，将该container移除队列。
+
+因此当箱子放置顺序队列被确定时，container队列也同时被确定，其对应的三维坐标也同时被确定。通过遗传算法的部分匹配交叉进行更新，同时摆放的的姿态（6种）为变异点。
+
+![image](https://user-images.githubusercontent.com/52786717/211155936-6b48a4d5-ae4c-47db-8769-0b94432a737a.png)
+
+该算法在保证基础功能全部实现的前提下，完成了如下高级功能：
+1. 参数考虑小数点后两位；
+3. 需要考虑箱子的摆放顺序，即箱子是从内到外，从下向上的摆放顺序；
+4. 因箱子共有3个不同的面，所有每个箱子有6种不同的摆放状态；（理论上可兼容，代码暂时只测试了2种状态，即最大面积向下，横放和竖放）
+
+# 伪代码
+Container_list = [ 车厢 ]  
+Loop:  
+>Individual = [box_0, box_1, ……, box_n]  
+>While len( Container_list) > 0:  
+>>Remain_containers = Calculate_remain_space (Container_list[0], individual [0])  
+>>Merge( Remain_containers, Container_list )  
+>>Container_list.pop(0)  
+>>Individual.pop(0)    
+
+>Crossover(population)  
+>Mutation(population)  
+>Scores = calculate_remain_space(childs)  
+>Selected_childs = Selection(scores)
+
+# 实验结果
+| 实验名 | 利用率 | 计算时间(s) |  
+|:------:|:-----:|:-----:|
+|  E1-1  | 0.8970|  2.47 | 
+|  E1-2  | 0.8074|  1.80 | 
+|  E1-3  | 0.8051|  1.82 |  
+|  E1-4  | 0.8445|  3.76 |  
+|  E1-5  | 0.9417|  3.24 |  
+|  E2-1  | 0.8385|  1.86 |  
+|  E2-2  | 0.9188|  2.25 |  
+|  E2-3  | 0.8710|  2.56 |  
+|  E2-4  | 0.8400|  2.73 |  
+|  E2-5  | 0.8014|  1.96 | 
+|  E3-1  | 0.7693|  2.03 |  
+|  E3-2  | 0.7680|  2.83 | 
+|  E3-3  | 0.8154|  2.37 |  
+|  E3-4  | 0.8204|  2.10 | 
+|  E3-5  | 0.8292|  3.56 | 
+|  E4-1  | 0.7746|  2.33 |
+|  E4-2  | 0.6452|  2.60 |  
+|  E4-3  | 0.8188|  4.23 | 
+|  E4-4  | 0.7516|  3.74 | 
+|  E4-5  | 0.7830|  3.40 |  
+|  E5-1  | 0.8120|  2.27 | 
+|  E5-2  | 0.6994|  2.63 | 
+|  E5-3  | 0.7393|  3.07 | 
+|  E5-4  | 0.6409|  2.99 |
+
+因摆放位置展示较为复杂，这里仅展示E1-1结果：
+
+![image](https://user-images.githubusercontent.com/52786717/211156012-fed24d35-cfb0-492e-9a85-0208eee7626c.png)
+
+# 运行
+```bash
+python main.py
+```
