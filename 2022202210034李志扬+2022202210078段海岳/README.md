@@ -20,35 +20,31 @@
 
 此文件用于描述货物中，包括货物的坐标等，详细内容如下所示：
 
-1.  class CargoPose(Enum):
-2.  tall_wide = 0
-3.  tall_thin = 1
-4.  mid_wide = 2
-5.  mid_thin = 3
-6.  short_wide = 4
-7.  short_thin = 5
+class CargoPose(Enum):
+tall_wide = 0
+tall_thin = 1
+mid_wide = 2
+mid_thin = 3
+short_wide = 4
+short_thin = 5
 
 此类用于描述货物的摆放方式，一共有6中摆放方式，为了直观描述，用上述六种。
 
-1.  class Point(object):
-2.  def \__init__(self, x: int, y: int, z: int) -\> None:
-3.  self.x = x
-4.  self.y = y
-5.  self.z = z
-6.  
-7.  def \__repr__(self) -\> str:
-8.  return f"({self.x},{self.y},{self.z})"
-9.  
-10. def \__eq__(self, \__o: object) -\> bool:
-11. return self.x == \__o.x and self.y == \__o.y and self.z == \__o.z
-12. 
-13. @property
-14. def is_valid(self) -\> bool:
-15. return self.x \>= 0 and self.y \>= 0 and self.z \>= 0
-16. 
-17. @property
-18. def tuple(self) -\> tuple:
-19. return (self.x, self.y, self.z)
+class Point(object):
+def \__init__(self, x: int, y: int, z: int) -\> None:
+self.x = x
+self.y = y
+self.z = z
+def \__repr__(self) -\> str:
+return f"({self.x},{self.y},{self.z})"
+def \__eq__(self, \__o: object) -\> bool:
+return self.x == \__o.x and self.y == \__o.y and self.z == \__o.z
+@property
+def is_valid(self) -\> bool:
+return self.x \>= 0 and self.y \>= 0 and self.z \>= 0
+@property
+def tuple(self) -\> tuple:
+return (self.x, self.y, self.z)
 
 此段代码中，_init_、_repr_、_eq_用于建立三维坐标系，在程序中用x,y,z可进行调用。Is_valid和tuple用于简化后续对三维点的操作并在类中设置合法性属性和序列化属性。
 
