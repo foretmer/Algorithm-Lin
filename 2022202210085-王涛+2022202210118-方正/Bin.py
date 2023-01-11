@@ -1,6 +1,8 @@
 from Common import *
-import utils
 from typing import Any, List, Tuple
+
+import utils.axis_utils
+import utils.math_utils
 
 class Bin:
     def __init__(self, l:float, w:float, h:float, precision:int=PRECISION):
@@ -8,6 +10,7 @@ class Bin:
         self.w = w
         self.h = h
         self.precision = precision
+        self.priority = None
 
     def __str__(self):
         format_ctrl = "({{0:.{0}f}},{{1:.{0}f}},{{2:.{0}f}})".format(self.precision)
@@ -42,14 +45,18 @@ class Bin:
         return Bin(self.l, self.w, self.h, self.precision)
     
     def axis_sort(self, axises:Tuple[Axis, Axis, Axis], ascending:bool=True) -> bool:
-        if not utils.axis_utils.valid_axis(axises):
-            raise ValueError("Axises are not valid!")
+        utils.axis_utils.valid_axis(axises)
         sorted_axises = sorted([self.l, self.w, self.h], reverse=(not ascending))
         self.l, self.w, self.h = utils.axis_utils.axis_to_lwh(sorted_axises, axises)
 
     def axis_transform(self, axises:Tuple[Axis, Axis, Axis]) -> bool:
-        self.l, self.w, self.h = utils.axis_utils.axis_to_lwh([self.l, self.w, self.h], axises)
-                
+        self.l, self.w, self.h = utils.axis_utils.lwh_to_axis([self.l, self.w, self.h], axises)
 
+    def set_priority(self, priority:float) -> None:
+        self.priority = priority
+                
+def sort_bins_by_priority(bins:List[Bin]) -> List[Bin]:
+    bins.sort(key=lambda x: x.priority, reverse=True)
+    return bins
 
        

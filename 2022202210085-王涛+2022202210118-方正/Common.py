@@ -1,9 +1,6 @@
-from enum import Enum
-import logging
-import verboselogs
-import sys
+import os
 import random
-import time
+from enum import Enum
 
 random.seed(1)
 
@@ -18,42 +15,69 @@ class Axis(Enum):
     def __repr__(self) -> str:
         return self.name
 
-class SearchMethod(Enum):
-    NONE = 0
-    BRUTE = 1
-    GREEDY = 2
-    CANDIDATE_POINTS = 3
-    SUB_SPACE = 4
+    class UnknownAxis(Exception):
+        def __init__(self):
+            super().__init__()
 
+    class InvalidAxis(Exception):
+        def __init__(self):
+            super().__init__()
+
+class Method(Enum):
     def __str__(self) -> str:
         return self.name
 
     def __repr__(self) -> str:
         return self.name
 
+class OfflineSearchMethod(Method):
+    NONE = 0
+    CANDIDATE_POINTS = 1
+
+    class UnknownSearchMethod(Exception):
+        ...
+    
+class OnlineSearchMethod(Method):
+    NONE = 0
+    BRUTE = 1
+    GREEDY = 2
+    CANDIDATE_POINTS = 3
+    SUB_SPACE = 4
+
+    class UnknownSearchMethod(Exception):
+        ...
+
+class PointAddMethod(Method):
+    NONE = 0
+    AXIS = 1
+    SURROUND = 2
+    ENVELOPE = 3
+    ALL = 4
+
+    class UnknownAddMethod(Exception):
+        ...
+
+class PointSortMethod(Method):
+    NONE = 0
+    AXIS = 1
+    SUM_MIN = 2
+    PORTION_MIN = 3
+
+    class UnknownSortMethod(Exception):
+        ...
+
+class BinSortMethod(Method):
+    NONE = 0
+    VOLUMN_MIN = 1
+    VOLUMN_MAX = 2
+    PORTION_SIMILAR = 3
+    APPROXIMATE_MAX = 4
+
+    class UnknownSortMethod(Exception):
+        ...
+
 PRECISION = 0 # =10^x
 
-LOG_FILE_PATH = r"D:\OneDrive\Projects\Coding\Python\Fun\3D_Bin_Packing\Logs\run_log_" + \
-                time.asctime().replace(" ","_").replace(":","_") + r".log"
+PROJECT_ROOT = os.path.split(os.path.realpath(__file__))[0]
 
-def get_logger():
-    logger = verboselogs.VerboseLogger("3DBP")
-    logger.setLevel(logging.DEBUG)
-
-    streamFormatter = logging.Formatter(fmt="({filename}:{lineno}) {levelname}: {message}",style="{")
-    fileFormatter = logging.Formatter(fmt='[{asctime}] File "{filename}", line {lineno}, in {funcName}\n{levelname}: {message}',style="{")
-
-    streamHandler = logging.StreamHandler(sys.stdout)
-    streamHandler.setLevel(logging.INFO)
-    streamHandler.setFormatter(streamFormatter)
-
-    fileHandler = logging.FileHandler(LOG_FILE_PATH, "w")
-    fileHandler.setLevel(logging.VERBOSE)
-    fileHandler.setFormatter(fileFormatter)
-
-    logger.addHandler(streamHandler)
-    logger.addHandler(fileHandler)
-
-    return logger
-
-logger = get_logger()
+LOG_DIR = os.path.abspath(os.path.join(PROJECT_ROOT,"Logs"))
