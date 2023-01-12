@@ -1,0 +1,304 @@
+Episode 0 ends.
+Mean ratio: 0.83, length: 26.0
+Episode ratio: 0.83, length: 26
+Episode 1 ends.
+Mean ratio: 0.8545, length: 31.0
+Episode ratio: 0.879, length: 36
+Episode 2 ends.
+Mean ratio: 0.8593333333333334, length: 33.0
+Episode ratio: 0.869, length: 37
+Episode 3 ends.
+Mean ratio: 0.8510000000000001, length: 30.75
+Episode ratio: 0.826, length: 24
+Episode 4 ends.
+Mean ratio: 0.8286000000000001, length: 32.0
+Episode ratio: 0.739, length: 37
+Episode 5 ends.
+Mean ratio: 0.8355000000000001, length: 32.833333333333336
+Episode ratio: 0.87, length: 37
+Episode 6 ends.
+Mean ratio: 0.8331428571428573, length: 32.857142857142854
+Episode ratio: 0.819, length: 33
+Episode 7 ends.
+Mean ratio: 0.838125, length: 32.875
+Episode ratio: 0.873, length: 33
+Episode 8 ends.
+Mean ratio: 0.8407777777777778, length: 33.111111111111114
+Episode ratio: 0.862, length: 35
+Episode 9 ends.
+Mean ratio: 0.8428000000000001, length: 33.2
+Episode ratio: 0.861, length: 34
+Episode 10 ends.
+Mean ratio: 0.8462727272727274, length: 32.54545454545455
+Episode ratio: 0.881, length: 26
+Episode 11 ends.
+Mean ratio: 0.8457500000000001, length: 32.416666666666664
+Episode ratio: 0.84, length: 31
+Episode 12 ends.
+Mean ratio: 0.8361538461538462, length: 32.07692307692308
+Episode ratio: 0.721, length: 28
+Episode 13 ends.
+Mean ratio: 0.8322142857142858, length: 32.57142857142857
+Episode ratio: 0.781, length: 39
+Episode 14 ends.
+Mean ratio: 0.8340666666666667, length: 32.06666666666667
+Episode ratio: 0.86, length: 25
+Episode 15 ends.
+Mean ratio: 0.8313124999999999, length: 32.0625
+Episode ratio: 0.79, length: 32
+Episode 16 ends.
+Mean ratio: 0.8315294117647059, length: 32.294117647058826
+Episode ratio: 0.835, length: 36
+Episode 17 ends.
+Mean ratio: 0.8359444444444444, length: 32.111111111111114
+Episode ratio: 0.911, length: 29
+Episode 18 ends.
+Mean ratio: 0.8370526315789473, length: 32.0
+Episode ratio: 0.857, length: 30
+Episode 19 ends.
+Mean ratio: 0.8387499999999999, length: 31.95
+Episode ratio: 0.871, length: 31
+Episode 20 ends.
+Mean ratio: 0.8324285714285713, length: 31.476190476190474
+Episode ratio: 0.706, length: 22
+Episode 21 ends.
+Mean ratio: 0.8339090909090907, length: 31.5
+Episode ratio: 0.865, length: 32
+Episode 22 ends.
+Mean ratio: 0.8336521739130432, length: 31.565217391304348
+Episode ratio: 0.828, length: 33
+Episode 23 ends.
+Mean ratio: 0.8350833333333334, length: 31.833333333333332
+Episode ratio: 0.868, length: 38
+Episode 24 ends.
+Mean ratio: 0.8360000000000001, length: 32.08
+Episode ratio: 0.858, length: 38
+Episode 25 ends.
+Mean ratio: 0.8376153846153847, length: 31.923076923076923
+Episode ratio: 0.878, length: 28
+Episode 26 ends.
+Mean ratio: 0.8395555555555556, length: 32.25925925925926
+Episode ratio: 0.89, length: 41
+Episode 27 ends.
+Mean ratio: 0.8411785714285716, length: 32.392857142857146
+Episode ratio: 0.885, length: 36
+Episode 28 ends.
+Mean ratio: 0.8415517241379312, length: 32.37931034482759
+Episode ratio: 0.852, length: 32
+Episode 29 ends.
+Mean ratio: 0.8395666666666668, length: 32.666666666666664
+Episode ratio: 0.782, length: 41
+Episode 30 ends.
+Mean ratio: 0.8405483870967744, length: 32.61290322580645
+Episode ratio: 0.87, length: 31
+Episode 31 ends.
+Mean ratio: 0.8403125, length: 32.59375
+Episode ratio: 0.833, length: 32
+Episode 32 ends.
+Mean ratio: 0.8339090909090909, length: 32.333333333333336
+Episode ratio: 0.629, length: 24
+Episode 33 ends.
+Mean ratio: 0.8330000000000001, length: 32.44117647058823
+Episode ratio: 0.803, length: 36
+Episode 34 ends.
+Mean ratio: 0.8328000000000001, length: 32.6
+Episode ratio: 0.826, length: 38
+Episode 35 ends.
+Mean ratio: 0.8335555555555556, length: 32.52777777777778
+Episode ratio: 0.86, length: 30
+Episode 36 ends.
+Mean ratio: 0.8354864864864866, length: 32.54054054054054
+Episode ratio: 0.905, length: 33
+Episode 37 ends.
+Mean ratio: 0.8363157894736843, length: 32.473684210526315
+Episode ratio: 0.867, length: 30
+Episode 38 ends.
+Mean ratio: 0.8382051282051284, length: 32.43589743589744
+Episode ratio: 0.91, length: 31
+Episode 39 ends.
+Mean ratio: 0.837775, length: 32.575
+Episode ratio: 0.821, length: 38
+Episode 40 ends.
+Mean ratio: 0.8384878048780487, length: 32.48780487804878
+Episode ratio: 0.867, length: 29
+Episode 41 ends.
+Mean ratio: 0.839095238095238, length: 32.57142857142857
+Episode ratio: 0.864, length: 36
+Episode 42 ends.
+Mean ratio: 0.8393023255813953, length: 32.627906976744185
+Episode ratio: 0.848, length: 35
+Episode 43 ends.
+Mean ratio: 0.8384545454545453, length: 32.47727272727273
+Episode ratio: 0.802, length: 26
+Episode 44 ends.
+Mean ratio: 0.839911111111111, length: 32.44444444444444
+Episode ratio: 0.904, length: 31
+Episode 45 ends.
+Mean ratio: 0.8398043478260869, length: 32.52173913043478
+Episode ratio: 0.835, length: 36
+Episode 46 ends.
+Mean ratio: 0.8402765957446809, length: 32.680851063829785
+Episode ratio: 0.862, length: 40
+Episode 47 ends.
+Mean ratio: 0.8409375, length: 32.833333333333336
+Episode ratio: 0.872, length: 40
+Episode 48 ends.
+Mean ratio: 0.8363469387755103, length: 32.97959183673469
+Episode ratio: 0.616, length: 40
+Episode 49 ends.
+Mean ratio: 0.83552, length: 32.94
+Episode ratio: 0.795, length: 31
+Episode 50 ends.
+Mean ratio: 0.8329019607843138, length: 32.78431372549019
+Episode ratio: 0.702, length: 25
+Episode 51 ends.
+Mean ratio: 0.8343461538461538, length: 32.67307692307692
+Episode ratio: 0.908, length: 27
+Episode 52 ends.
+Mean ratio: 0.8354150943396227, length: 32.83018867924528
+Episode ratio: 0.891, length: 41
+Episode 53 ends.
+Mean ratio: 0.8361111111111111, length: 32.870370370370374
+Episode ratio: 0.873, length: 35
+Episode 54 ends.
+Mean ratio: 0.8364909090909091, length: 32.74545454545454
+Episode ratio: 0.857, length: 26
+Episode 55 ends.
+Mean ratio: 0.8368035714285715, length: 32.642857142857146
+Episode ratio: 0.854, length: 27
+Episode 56 ends.
+Mean ratio: 0.8373157894736842, length: 32.6140350877193
+Episode ratio: 0.866, length: 31
+Episode 57 ends.
+Mean ratio: 0.8372241379310346, length: 32.58620689655172
+Episode ratio: 0.832, length: 31
+Episode 58 ends.
+Mean ratio: 0.8371525423728814, length: 32.45762711864407
+Episode ratio: 0.833, length: 25
+Episode 59 ends.
+Mean ratio: 0.8379666666666667, length: 32.63333333333333
+Episode ratio: 0.886, length: 43
+Episode 60 ends.
+Mean ratio: 0.8383114754098362, length: 32.57377049180328
+Episode ratio: 0.859, length: 29
+Episode 61 ends.
+Mean ratio: 0.838935483870968, length: 32.61290322580645
+Episode ratio: 0.877, length: 35
+Episode 62 ends.
+Mean ratio: 0.838809523809524, length: 32.6031746031746
+Episode ratio: 0.831, length: 32
+Episode 63 ends.
+Mean ratio: 0.8395312500000001, length: 32.65625
+Episode ratio: 0.885, length: 36
+Episode 64 ends.
+Mean ratio: 0.8389384615384616, length: 32.707692307692305
+Episode ratio: 0.801, length: 36
+Episode 65 ends.
+Mean ratio: 0.8381515151515152, length: 32.666666666666664
+Episode ratio: 0.787, length: 30
+Episode 66 ends.
+Mean ratio: 0.8379701492537315, length: 32.62686567164179
+Episode ratio: 0.826, length: 30
+Episode 67 ends.
+Mean ratio: 0.8386176470588236, length: 32.64705882352941
+Episode ratio: 0.882, length: 34
+Episode 68 ends.
+Mean ratio: 0.8369710144927537, length: 32.507246376811594
+Episode ratio: 0.725, length: 23
+Episode 69 ends.
+Mean ratio: 0.8363857142857144, length: 32.47142857142857
+Episode ratio: 0.796, length: 30
+Episode 70 ends.
+Mean ratio: 0.8367323943661972, length: 32.478873239436616
+Episode ratio: 0.861, length: 33
+Episode 71 ends.
+Mean ratio: 0.8370416666666666, length: 32.47222222222222
+Episode ratio: 0.859, length: 32
+Episode 72 ends.
+Mean ratio: 0.8373972602739725, length: 32.52054794520548
+Episode ratio: 0.863, length: 36
+Episode 73 ends.
+Mean ratio: 0.8381351351351352, length: 32.62162162162162
+Episode ratio: 0.892, length: 40
+Episode 74 ends.
+Mean ratio: 0.8383466666666667, length: 32.68
+Episode ratio: 0.854, length: 37
+Episode 75 ends.
+Mean ratio: 0.8380526315789474, length: 32.61842105263158
+Episode ratio: 0.816, length: 28
+Episode 76 ends.
+Mean ratio: 0.8379870129870131, length: 32.58441558441559
+Episode ratio: 0.833, length: 30
+Episode 77 ends.
+Mean ratio: 0.8375128205128206, length: 32.67948717948718
+Episode ratio: 0.801, length: 40
+Episode 78 ends.
+Mean ratio: 0.8382784810126582, length: 32.65822784810127
+Episode ratio: 0.898, length: 31
+Episode 79 ends.
+Mean ratio: 0.8382625000000001, length: 32.6
+Episode ratio: 0.837, length: 28
+Episode 80 ends.
+Mean ratio: 0.8381604938271605, length: 32.641975308641975
+Episode ratio: 0.83, length: 36
+Episode 81 ends.
+Mean ratio: 0.8384634146341464, length: 32.68292682926829
+Episode ratio: 0.863, length: 36
+Episode 82 ends.
+Mean ratio: 0.838409638554217, length: 32.602409638554214
+Episode ratio: 0.834, length: 26
+Episode 83 ends.
+Mean ratio: 0.8382142857142858, length: 32.595238095238095
+Episode ratio: 0.822, length: 32
+Episode 84 ends.
+Mean ratio: 0.8379764705882354, length: 32.56470588235294
+Episode ratio: 0.818, length: 30
+Episode 85 ends.
+Mean ratio: 0.8372674418604652, length: 32.55813953488372
+Episode ratio: 0.777, length: 32
+Episode 86 ends.
+Mean ratio: 0.837954022988506, length: 32.52873563218391
+Episode ratio: 0.897, length: 30
+Episode 87 ends.
+Mean ratio: 0.8384886363636362, length: 32.55681818181818
+Episode ratio: 0.885, length: 35
+Episode 88 ends.
+Mean ratio: 0.8393033707865167, length: 32.71910112359551
+Episode ratio: 0.911, length: 47
+Episode 89 ends.
+Mean ratio: 0.8394111111111111, length: 32.63333333333333
+Episode ratio: 0.849, length: 25
+Episode 90 ends.
+Mean ratio: 0.8398021978021978, length: 32.68131868131868
+Episode ratio: 0.875, length: 37
+Episode 91 ends.
+Mean ratio: 0.8397173913043477, length: 32.67391304347826
+Episode ratio: 0.832, length: 32
+Episode 92 ends.
+Mean ratio: 0.839537634408602, length: 32.655913978494624
+Episode ratio: 0.823, length: 31
+Episode 93 ends.
+Mean ratio: 0.8394255319148933, length: 32.61702127659574
+Episode ratio: 0.829, length: 29
+Episode 94 ends.
+Mean ratio: 0.8391473684210524, length: 32.6
+Episode ratio: 0.813, length: 31
+Episode 95 ends.
+Mean ratio: 0.8399479166666667, length: 32.708333333333336
+Episode ratio: 0.916, length: 43
+Episode 96 ends.
+Mean ratio: 0.8401237113402062, length: 32.79381443298969
+Episode ratio: 0.857, length: 41
+Episode 97 ends.
+Mean ratio: 0.8404387755102041, length: 32.89795918367347
+Episode ratio: 0.871, length: 43
+Episode 98 ends.
+Mean ratio: 0.8404040404040405, length: 32.90909090909091
+Episode ratio: 0.837, length: 34
+Episode 99 ends.
+Mean ratio: 0.84038, length: 32.89
+Episode ratio: 0.838, length: 31
+#################################
+Evaluation using 100 episodes
+Mean ratio: 0.84332, mean length: 33.11000
+Cost time: 10.32005s
